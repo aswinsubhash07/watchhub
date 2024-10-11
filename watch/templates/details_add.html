@@ -1,0 +1,45 @@
+
+{% extends 'base.html'%}
+
+{%block main_block%}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 mt-5">
+            <center>
+                <h1 style="font-weight: bold;">ADD details</h1>
+            </center>
+
+            <form action="" method="post">
+                {%csrf_token%}
+                 <center>
+                <table>
+                    <tr>
+                    <td>name :</td>
+                    <td><input type="text" name="name" class="form-control mb-2"></td>
+                    </tr>
+                    <tr>
+                        <td>address :</td>
+                        <td><input type="text" name="address" class="form-control mb-2"></td>
+                    </tr>
+                    <tr>
+                        <td>phone :</td>
+                        <td><input type="text" name="phone" class="form-control mb-2"></td>
+                    </tr>
+                  
+
+                </table>
+
+                <button type="submit" class="btn btn-success " style="width: 270px;">Add</button>
+                </center>
+
+
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+
+
+{%endblock%}
